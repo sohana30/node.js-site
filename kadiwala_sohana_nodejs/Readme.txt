@@ -1,0 +1,7 @@
+1)For web app use "localhost:3000"
+2)For all jason file "localhost:3000/api"
+3)For jason file of france "localhost:3000/api/france"
+4)For jason file of france "localhost:3000/api/turkey"
+5)For jason file of france "localhost:3000/api/india"
+6)For jason file of france "localhost:3000/api/mexico"
+7)For jason file of france "localhost:3000/api/canada"

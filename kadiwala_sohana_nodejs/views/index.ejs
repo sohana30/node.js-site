@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <% include partials/menu%>
+  <div class="container">
+     
+  		
+	  		<section id="intro">
+          <h1>Welcome to Travel Hub</h1>
+  			<p>One hub to get information where your next holiday trip should be</p>
+  			
+  		
+  		</section>
+  		<section>
+        <h1 class="hidden">Destination</h1>
+  			<ul>
+          <% places.forEach(function(places){ %>
+          <br>
+          <li><img id="places" src="<%= places.image %>"</li>
+          <li><a id="places" href="#"><strong> Country    :</strong> <%= places.country %> </li></a>
+          <li><a id="places" href="#"><strong> City       :</strong> <%= places.city %> </li></a>
+          <li><a id="places" href="#"><strong> Price      :</strong> <%= places.price %> </li></a>
+          <li><a id="places" href="#"><strong> Description:</strong> <%= places.description %> </li></a>
+          <br>
+          <%});%>
+  		</ul>
+      </section>
+      
+        <% include partials/footer%>
+    
+  </div>
+
+  </body>
+</html>
